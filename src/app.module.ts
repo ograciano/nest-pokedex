@@ -17,4 +17,8 @@ import { SeedModule } from './seed/seed.module';
     SeedModule,
   ],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(){
+    console.log(process.env);
+  }
+}
